@@ -210,6 +210,12 @@ button:focus {
     @content;
   }
 }
+/* Show Nav Menu Items (tablets, landscape phones, portrait phones) */
+@mixin navMenu {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
 
 /* ----------Theme Buttons CSS---------- */
 /* Template Button Effect */
@@ -255,6 +261,41 @@ button:focus {
 }
 
 /* ----------HEADER NAVBAR CSS---------- */
+.header {
+  max-height: 60px;
+  line-height: 60px;
+  margin-top: 50px;
+}
+
+.nav {
+  ul {
+    li {
+      a {
+        font-family: $fontSecondary;
+        font-weight: 700;
+        font-size: 21px;
+        color: $primaryColor;
+        text-transform: uppercase;
+        margin-left: 50px;
+        letter-spacing: 4px;
+        @include transitionEaseInOut(1s);
+
+        &:hover,
+        &.active {
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+
+  #menu_icon {
+    color: $grayColor;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    @include transitionEaseInOut(1s);
+  }
+}
 
 /* ----------HOMEPAGE CSS---------- */
 
