@@ -17,7 +17,7 @@ Credit: https://www.freepik.com/free-psd/american-food-website-app-template_7335
 3.  Homepage CSS
  */
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap");
 /* ----------Template Theme Color CSS---------- */
 /* Template theme color */
 /* Fonts */
@@ -29,7 +29,7 @@ Credit: https://www.freepik.com/free-psd/american-food-website-app-template_7335
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #3d2514;
@@ -68,13 +68,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 700;
   color: #3d2514;
 }
 
 .fix {
   overflow: hidden;
+}
+
+.bg, .feature .single_feature {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #ddd;
 }
 
 button:focus {
@@ -130,16 +137,20 @@ nav_item:nth-child(5) {
   color: #3d3d3d;
 }
 
+.text_white {
+  color: #fff;
+}
+
 .font_primary {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font_secondary {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .font_alfa {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: "Alfa Slab One", cursive;
 }
 
 /* ----------Prefixes CSS by browser---------- */
@@ -156,8 +167,7 @@ nav_item:nth-child(5) {
 /* Show Nav Menu Items (tablets, landscape phones, portrait phones) */
 /* ----------Theme Buttons CSS---------- */
 /* Template Button Effect */
-.btn_primary,
-.btn_secondary {
+.btn_primary, .btn_secondary {
   display: inline-block;
   border-radius: 5px;
   vertical-align: center;
@@ -168,8 +178,7 @@ nav_item:nth-child(5) {
   -o-transition: all 1s ease-in-out;
 }
 
-.btn_primary:hover,
-.btn_secondary:hover {
+.btn_primary:hover, .btn_secondary:hover {
   transform: scale(0.98);
   -webkit-transform: scale(0.98);
   -moz-transform: scale(0.98);
@@ -178,7 +187,7 @@ nav_item:nth-child(5) {
 }
 
 .btn_primary {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: "Alfa Slab One", cursive;
   color: #fff;
   background: #bf2222;
   font-size: 18px;
@@ -198,7 +207,7 @@ nav_item:nth-child(5) {
 }
 
 .btn_secondary {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: #3d2514;
   background: #ffc045;
   padding: 20px 25px;
@@ -222,7 +231,7 @@ nav_item:nth-child(5) {
 }
 
 .nav ul li a {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 700;
   font-size: 21px;
   color: #3d2514;
@@ -236,8 +245,7 @@ nav_item:nth-child(5) {
   -o-transition: all 1s ease-in-out;
 }
 
-.nav ul li a:hover,
-.nav ul li a.active {
+.nav ul li a:hover, .nav ul li a.active {
   color: #bf2222;
 }
 
@@ -254,7 +262,43 @@ nav_item:nth-child(5) {
 }
 
 /* ----------HOMEPAGE CSS---------- */
-/* ---------- CSS---------- */
+/* ----------FEATURE CSS---------- */
+.feature .single_feature {
+  background: url(../img/feature/feature_bg_1.png);
+  height: 420px;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.feature .single_feature:hover {
+  border: 5px solid #bf2222;
+}
+
+.feature .single_feature p {
+  margin: 0;
+}
+
+.feature .single_feature_2 {
+  background: url(../img/feature/feature_bg_2.png) center center no-repeat #ddd;
+  height: 195px;
+  margin-bottom: 30px;
+}
+
+.feature .single_feature_3 {
+  background: url(../img/feature/feature_bg_3.png) center center no-repeat #ddd;
+  height: 195px;
+}
+
 /* ---------- CSS---------- */
 /* ----------Import RESPONSIVE CSS---------- */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -276,11 +320,12 @@ nav_item:nth-child(5) {
   nav ul {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background: rgba(61, 61, 61, 0.4);
+    height: 250px;
+    background: rgba(61, 61, 61, 0.7);
     top: 150px;
     left: -100%;
     text-align: center;
+    z-index: 99;
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
