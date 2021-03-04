@@ -73,21 +73,25 @@ h6 {
   color: #3d2514;
 }
 
+button:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+  line-height: inherit;
+}
+
 .fix {
   overflow: hidden;
 }
 
-.bg, .feature .single_feature {
+.bg, .feature_area .single_feature {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-color: #ddd;
 }
 
-button:focus {
-  outline: 1px dotted;
-  outline: 1px auto -webkit-focus-ring-color;
-  line-height: inherit;
+.full_height {
+  height: 100vh;
 }
 
 /* Menu Transition delay effect */
@@ -230,6 +234,10 @@ nav_item:nth-child(5) {
   margin-top: 50px;
 }
 
+.nav.transparent {
+  top: 110px;
+}
+
 .nav ul li a {
   font-family: "Bebas Neue", cursive;
   font-weight: 700;
@@ -262,8 +270,63 @@ nav_item:nth-child(5) {
 }
 
 /* ----------HOMEPAGE CSS---------- */
+.hero_area {
+  background: linear-gradient(to right, #ffc657, #ffc24a);
+  height: 100vh;
+}
+
+.hero_area .hero_text h5 {
+  font-size: 24px;
+  border: 5px dotted #3d2514;
+  display: inline-block;
+  padding: 10px;
+}
+
+.hero_area .hero_text h1 {
+  font-size: 114px;
+}
+
+.hero_area .hero_text h2 {
+  font-size: 56px;
+}
+
+.hero_area .hero_img {
+  position: relative;
+}
+
+.hero_area .hero_img .price_tag {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 140px;
+  height: 140px;
+  background: #bf2222;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.hero_area .hero_img .price_tag h2 {
+  color: #fff;
+  border: 3px dotted;
+  text-align: center;
+  padding: 24px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.hero_area .hero_img .price_tag h2 span {
+  font-size: 50%;
+}
+
 /* ----------FEATURE CSS---------- */
-.feature .single_feature {
+.feature_area .single_feature {
   background: url(../img/feature/feature_bg_1.png);
   height: 420px;
   padding: 20px;
@@ -280,36 +343,106 @@ nav_item:nth-child(5) {
   -o-transition: all 1s ease-in-out;
 }
 
-.feature .single_feature:hover {
+.feature_area .single_feature:hover {
   border: 5px solid #bf2222;
 }
 
-.feature .single_feature p {
+.feature_area .single_feature p {
   margin: 0;
 }
 
-.feature .single_feature_2 {
+.feature_area .single_feature_2 {
   background: url(../img/feature/feature_bg_2.png) center center no-repeat #ddd;
   height: 195px;
   margin-bottom: 30px;
 }
 
-.feature .single_feature_3 {
+.feature_area .single_feature_3 {
   background: url(../img/feature/feature_bg_3.png) center center no-repeat #ddd;
   height: 195px;
 }
 
 /* ---------- CSS---------- */
 /* ----------Import RESPONSIVE CSS---------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero_area {
+    height: 500px;
+  }
+  .hero_area .hero_text h5 {
+    font-size: 20px;
+  }
+  .hero_area .hero_text h1 {
+    font-size: 60px;
+  }
+  .hero_area .hero_text h2 {
+    font-size: 40px;
+  }
+  .hero_area .hero_img .price_tag {
+    top: 50%;
+    left: 6%;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+  .hero_area .hero_img .price_tag h2 {
+    padding: 7px;
+    font-size: 30px;
+  }
+  .hero_area .hero_img .price_tag h2 span {
+    font-size: 50%;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
   .header {
     line-height: 0;
+  }
+  .hero_area {
+    height: 500px;
+  }
+  .hero_area .hero_text h5 {
+    font-size: 16px;
+  }
+  .hero_area .hero_text h1 {
+    font-size: 60px;
+  }
+  .hero_area .hero_text h2 {
+    font-size: 40px;
+  }
+  .hero_area .hero_img .price_tag {
+    top: 50%;
+    left: 6%;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+  .hero_area .hero_img .price_tag h2 {
+    padding: 7px;
+    font-size: 30px;
+  }
+  .hero_area .hero_img .price_tag h2 span {
+    font-size: 50%;
   }
 }
 
 @media (max-width: 575px) {
   .header {
     line-height: 0;
+  }
+  .hero_area {
+    height: 500px;
+  }
+  .hero_area .hero_text h5 {
+    font-size: 12px;
+  }
+  .hero_area .hero_text h1 {
+    font-size: 30px;
+  }
+  .hero_area .hero_text h2 {
+    font-size: 20px;
+  }
+  .hero_area .hero_img .price_tag {
+    display: none;
   }
 }
 

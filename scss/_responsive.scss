@@ -8,6 +8,38 @@
 
 // Medium devices (tablets, 768px and up)
 @include mediaMd {
+  .hero_area {
+    height: 500px;
+    .hero_text {
+      h5 {
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
+    .hero_img {
+      .price_tag {
+        top: 50%;
+        left: 6%;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+
+        h2 {
+          padding: 7px;
+          font-size: 30px;
+
+          span {
+            font-size: 50%;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -15,12 +47,65 @@
   .header {
     line-height: 0;
   }
+
+  .hero_area {
+    height: 500px;
+    .hero_text {
+      h5 {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
+    .hero_img {
+      .price_tag {
+        top: 50%;
+        left: 6%;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+
+        h2 {
+          padding: 7px;
+          font-size: 30px;
+
+          span {
+            font-size: 50%;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @include mediaSx {
   .header {
     line-height: 0;
+  }
+
+  .hero_area {
+    height: 500px;
+    .hero_text {
+      h5 {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .hero_img {
+      .price_tag {
+        display: none;
+      }
+    }
   }
 }
 

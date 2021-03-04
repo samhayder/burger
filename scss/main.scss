@@ -28,6 +28,7 @@ $secondaryColor: #bf2222;
 $bodyColor: #ffffff;
 $grayColor: #3d3d3d;
 $white: #fff;
+
 /* Fonts */
 $fontPrimary: 'Montserrat', sans-serif;
 $fontSecondary: 'Bebas Neue', cursive;
@@ -78,6 +79,12 @@ h6 {
   color: $primaryColor;
 }
 
+button:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+  line-height: inherit;
+}
+
 .fix {
   overflow: hidden;
 }
@@ -87,10 +94,8 @@ h6 {
   background-repeat: no-repeat !important;
   background-color: #ddd;
 }
-button:focus {
-  outline: 1px dotted;
-  outline: 1px auto -webkit-focus-ring-color;
-  line-height: inherit;
+.full_height {
+  height: 100vh;
 }
 
 /* Menu Transition delay effect */
@@ -277,6 +282,9 @@ button:focus {
 }
 
 .nav {
+  &.transparent {
+    top: 110px;
+  }
   ul {
     li {
       a {
@@ -307,9 +315,55 @@ button:focus {
 }
 
 /* ----------HOMEPAGE CSS---------- */
+.hero_area {
+  background: linear-gradient(to right, #ffc657, #ffc24a);
+  height: 100vh;
+
+  .hero_text {
+    h5 {
+      font-size: 24px;
+      border: 5px dotted $primaryColor;
+      display: inline-block;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 114px;
+    }
+    h2 {
+      font-size: 56px;
+    }
+  }
+
+  .hero_img {
+    position: relative;
+
+    .price_tag {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      width: 140px;
+      height: 140px;
+      background: $secondaryColor;
+      padding: 5px;
+      @include border-radius(50%);
+
+      h2 {
+        color: $white;
+        border: 3px dotted;
+        text-align: center;
+        padding: 24px;
+        @include border-radius(50%);
+
+        span {
+          font-size: 50%;
+        }
+      }
+    }
+  }
+}
 
 /* ----------FEATURE CSS---------- */
-.feature {
+.feature_area {
   .single_feature {
     background: url(../img/feature/feature_bg_1.png);
     height: 420px;
