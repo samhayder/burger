@@ -394,7 +394,7 @@ button:focus {
   }
 }
 
-/* ----------Order CSS---------- */
+/* ----------ORDER CSS---------- */
 .order {
   .title {
     h4 {
@@ -410,7 +410,49 @@ button:focus {
   }
 }
 
-/* ---------- CSS---------- */
+/* ----------EVENTS CSS---------- */
+.events {
+  .container {
+    padding: 30px;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+  }
+
+  .carousel_dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 15;
+
+    li {
+      background: #dcdcdc;
+      padding: 5px;
+      @include border-radius(5px);
+      margin-left: 5px;
+      cursor: pointer;
+
+      &.active {
+        background: #ffc045;
+      }
+    }
+  }
+  .event_text {
+    h4 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 42px;
+      letter-spacing: 5px;
+      margin-top: -18px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .event_img {
+    height: 350px;
+  }
+}
 /* ---------- CSS---------- */
 
 /* ----------Import RESPONSIVE CSS---------- */

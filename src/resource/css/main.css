@@ -362,7 +362,7 @@ nav_item:nth-child(5) {
   height: 195px;
 }
 
-/* ----------Order CSS---------- */
+/* ----------ORDER CSS---------- */
 .order .title h4 {
   background: #ffc045;
   font-size: 25px;
@@ -375,7 +375,54 @@ nav_item:nth-child(5) {
   margin: 20px 0;
 }
 
-/* ---------- CSS---------- */
+/* ----------EVENTS CSS---------- */
+.events .container {
+  padding: 30px;
+  box-shadow: 0 0 10px;
+  border-radius: 5px;
+}
+
+.events .carousel_dots {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+}
+
+.events .carousel_dots li {
+  background: #dcdcdc;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.events .carousel_dots li.active {
+  background: #ffc045;
+}
+
+.events .event_text h4 {
+  font-size: 30px;
+}
+
+.events .event_text h2 {
+  font-size: 42px;
+  letter-spacing: 5px;
+  margin-top: -18px;
+}
+
+.events .event_text p {
+  font-size: 20px;
+}
+
+.events .event_img {
+  height: 350px;
+}
+
 /* ---------- CSS---------- */
 /* ----------Import RESPONSIVE CSS---------- */
 @media (min-width: 768px) and (max-width: 991px) {
