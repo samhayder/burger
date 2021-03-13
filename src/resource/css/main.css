@@ -173,7 +173,6 @@ nav_item:nth-child(5) {
 /* Template Button Effect */
 .btn_primary, .btn_secondary {
   display: inline-block;
-  border-radius: 5px;
   vertical-align: center;
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -195,8 +194,9 @@ nav_item:nth-child(5) {
   color: #fff;
   background: #bf2222;
   font-size: 18px;
-  padding: 20px 25px;
-  line-height: 2.778;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  border-color: transparent;
   transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out;
   -moz-transition: all 2s ease-in-out;
@@ -362,6 +362,20 @@ nav_item:nth-child(5) {
   height: 195px;
 }
 
+/* ----------Order CSS---------- */
+.order .title h4 {
+  background: #ffc045;
+  font-size: 25px;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.order .title h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+/* ---------- CSS---------- */
 /* ---------- CSS---------- */
 /* ----------Import RESPONSIVE CSS---------- */
 @media (min-width: 768px) and (max-width: 991px) {
