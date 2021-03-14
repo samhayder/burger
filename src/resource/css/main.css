@@ -83,7 +83,7 @@ button:focus {
   overflow: hidden;
 }
 
-.bg, .feature_area .single_feature {
+.bg, .feature_area .single_feature, .find {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -421,6 +421,21 @@ nav_item:nth-child(5) {
 
 .events .event_img {
   height: 350px;
+}
+
+/* ----------FIND CSS---------- */
+.find {
+  background: url(../img/find_bg.png);
+}
+
+.find input {
+  padding: 30px 15px;
+}
+
+.find button {
+  padding: 13px 15px;
+  border-radius: 5px;
+  font-size: 21px;
 }
 
 /* ---------- CSS---------- */

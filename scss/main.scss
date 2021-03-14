@@ -453,6 +453,20 @@ button:focus {
     height: 350px;
   }
 }
+/* ----------FIND CSS---------- */
+.find {
+  background: url(../img/find_bg.png);
+  @extend .bg;
+
+  input {
+    padding: 30px 15px;
+  }
+  button {
+    padding: 13px 15px;
+    border-radius: 5px;
+    font-size: 21px;
+  }
+}
 /* ---------- CSS---------- */
 
 /* ----------Import RESPONSIVE CSS---------- */
